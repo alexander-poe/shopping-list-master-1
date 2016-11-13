@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shopping List</title>
+  <title>List App</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -11,32 +12,29 @@
 <body>
 
   <div class="container">
-    <h1>Shopping List</h1>
+    <h1></h1>
 
     <form id="js-shopping-list-form">
       <label for="shopping-list-entry">Add an item</label>
-      <input type="text" name="shopping-list-entry" id="shopping-list-entry" placeholder="e.g., broccoli">
+      <input type="text" name="shopping-list-entry" id="shopping-list-entry" placeholder=" ">
       <button type="submit">Add item</button>
-    </form>
+        <input type="radio" name="urgentimportant" value="male">
+        <input type="radio" name="nonurgentimport" value="female"> 
+        <input type="radio" name="urgentnotimportant" value="other"> 
+        <input type="radio" name="noturgentnotimportant" value=""> 
 
+  </form>
+ 
     <ul class="shopping-list">
-      <li>
-        <span class="shopping-item">bread</span>
-        <div class="shopping-item-controls">
-          <button class="shopping-item-toggle">
-            <span class="button-label">check</span>
-          </button>
-          <button class="shopping-item-delete">
-            <span class="button-label">delete</span>
-          </button>
-        </div>
-      </li>
+   
     </ul>
   </div>
-  <script
+<script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+    </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
 <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
